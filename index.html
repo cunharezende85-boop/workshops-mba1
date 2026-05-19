@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops | MBA IA Aplicada ao Direito</title>
+  <style>
+    :root {
+      --azul-escuro: #0f1e3c;
+      --azul-medio: #1a3566;
+      --dourado: #c9a84c;
+      --dourado-claro: #e8c96a;
+      --fundo: #f4f6f9;
+      --branco: #ffffff;
+      --cinza-texto: #4a4a4a;
+      --cinza-claro: #e8ecf1;
+      --verde: #2e7d32;
+      --sombra: 0 4px 20px rgba(0,0,0,0.10);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--fundo);
+      color: var(--cinza-texto);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-medio) 100%);
+      padding: 40px 24px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.08);
+    }
+    .header-badge {
+      display: inline-block;
+      background: var(--dourado);
+      color: var(--azul-escuro);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    header h1 {
+      color: var(--branco);
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    header h1 span { color: var(--dourado-claro); }
+    header p {
+      color: rgba(255,255,255,0.75);
+      font-size: 15px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .atualizado {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 1px;
+    }
+
+    /* ── CONTAINER ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* ── CARD DE WORKSHOP ── */
+    .workshop-card {
+      background: var(--branco);
+      border-radius: 16px;
+      box-shadow: var(--sombra);
+      margin-bottom: 32px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .workshop-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+    }
+
+    .card-header {
+      background: linear-gradient(90deg, var(--azul-escuro), var(--azul-medio));
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .numero {
+      background: var(--dourado);
+      color: var(--azul-escuro);
+      font-weight: 800;
+      font-size: 16px;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .card-header-info { flex: 1; }
+    .card-header h2 {
+      color: var(--branco);
+      font-size: clamp(14px, 2.5vw, 17px);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .data-badge {
+      display: inline-block;
+      background: rgba(201,168,76,0.25);
+      color: var(--dourado-claro);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 10px;
+      margin-top: 5px;
+    }
+
+    .card-body { padding: 22px 24px; }
+    .descricao {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    /* ── VÍDEO ── */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #000;
+      margin-bottom: 20px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── MATERIAIS ── */
+    .materiais-titulo {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    .material-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--fundo);
+      border: 1px solid var(--cinza-claro);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: var(--azul-medio);
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .material-link:hover {
+      background: #eaf0fb;
+      border-color: var(--azul-medio);
+    }
+    .material-link .icone {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .material-link.sem-link {
+      color: #aaa;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* ── LOADING / ERRO ── */
+    #estado {
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+      font-size: 15px;
+    }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 4px solid #ddd;
+      border-top-color: var(--azul-medio);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── RODAPÉ ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #bbb;
+      border-top: 1px solid var(--cinza-claro);
+    }
+
+    @media (max-width: 600px) {
+      .card-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .card-body { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">Material Exclusivo</div>
+  <h1>Workshops<br><span id="titulo-curso">MBA IA Aplicada ao Direito</span></h1>
+  <p>Acesse os vídeos e materiais de apoio de cada workshop do seu curso.</p>
+  <span class="atualizado" id="atualizado-em"></span>
+</header>
+
+<div class="container">
+  <div id="estado">
+    <div class="spinner"></div>
+    Carregando workshops...
+  </div>
+  <div id="lista-workshops"></div>
+</div>
+
+<footer>
+  <p>Conteúdo exclusivo para alunos do MBA IA Aplicada ao Direito &nbsp;·&nbsp; Não compartilhe este link</p>
+</footer>
+
+<script>
+  // ── Detecta o ícone pelo tipo de arquivo ──
+  function iconeArquivo(url) {
+    if (!url || url.startsWith('COLE_')) return '📎';
+    const ext = url.split('.').pop().toLowerCase().split('?')[0];
+    const map = { pdf: '📄', docx: '📝', doc: '📝', xlsx: '📊', xls: '📊', pptx: '📑', ppt: '📑' };
+    return map[ext] || '📎';
+  }
+
+  // ── Extrai ID Vimeo e monta embed ──
+  function embedVimeo(url) {
+    // Suporta https://vimeo.com/ID/HASH e https://vimeo.com/ID
+    const match = url.match(/vimeo\.com\/(\d+)(?:\/([a-zA-Z0-9]+))?/);
+    if (!match) return `<p style="color:#c00;padding:12px">Link de vídeo inválido</p>`;
+    const id = match[1];
+    const hash = match[2] ? `?h=${match[2]}&` : '?';
+    return `<iframe
+      src="https://player.vimeo.com/video/${id}${hash}title=0&byline=0&portrait=0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      title="Workshop"
+    ></iframe>`;
+  }
+
+  // ── Extrai ID YouTube e monta embed ──
+  function embedYouTube(url) {
+    const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    if (!match) return '';
+    return `<iframe
+      src="https://www.youtube.com/embed/${match[1]}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="Workshop"
+    ></iframe>`;
+  }
+
+  function montarEmbed(url) {
+    if (!url) return '<p style="color:#aaa;padding:12px;font-size:13px">Vídeo não disponível ainda</p>';
+    if (url.includes('vimeo')) return embedVimeo(url);
+    if (url.includes('youtube') || url.includes('youtu.be')) return embedYouTube(url);
+    return `<p style="color:#aaa;padding:12px;font-size:13px">Formato de vídeo não reconhecido</p>`;
+  }
+
+  // ── Renderiza os cards ──
+  function renderWorkshops(data) {
+    document.getElementById('titulo-curso').textContent = data.curso || 'MBA IA Aplicada ao Direito';
+    if (data.atualizadoEm) {
+      document.getElementById('atualizado-em').textContent = `Atualizado em: ${data.atualizadoEm}`;
+    }
+
+    const lista = document.getElementById('lista-workshops');
+    lista.innerHTML = '';
+    document.getElementById('estado').style.display = 'none';
+
+    if (!data.workshops || data.workshops.length === 0) {
+      lista.innerHTML = '<p style="text-align:center;color:#aaa;padding:40px">Nenhum workshop disponível ainda.</p>';
+      return;
+    }
+
+    data.workshops.forEach((w, i) => {
+      const materaisHTML = (w.materiais && w.materiais.length > 0)
+        ? w.materiais.map(m => {
+            const semLink = !m.url || m.url.startsWith('COLE_');
+            const icone = iconeArquivo(m.url);
+            return semLink
+              ? `<span class="material-link sem-link"><span class="icone">${icone}</span>${m.nome} <span style="font-size:11px;margin-left:auto">(em breve)</span></span>`
+              : `<a class="material-link" href="${m.url}" target="_blank" rel="noopener"><span class="icone">${icone}</span>${m.nome}</a>`;
+          }).join('')
+        : '<p style="font-size:13px;color:#bbb">Nenhum material disponível para este workshop.</p>';
+
+      const card = document.createElement('div');
+      card.className = 'workshop-card';
+      card.innerHTML = `
+        <div class="card-header">
+          <div class="numero">${i + 1}</div>
+          <div class="card-header-info">
+            <h2>${w.tema}</h2>
+            <span class="data-badge">📅 ${w.data}</span>
+          </div>
+        </div>
+        <div class="card-body">
+          ${w.descricao ? `<p class="descricao">${w.descricao}</p>` : ''}
+          <div class="video-wrapper">${montarEmbed(w.videoUrl)}</div>
+          <p class="materiais-titulo">Materiais de Apoio</p>
+          ${materaisHTML}
+        </div>
+      `;
+      lista.appendChild(card);
+    });
+  }
+
+  // ── Carrega o JSON ──
+  // O arquivo workshops.json deve estar na mesma pasta que este index.html
+  fetch('workshops.json?v=' + Date.now())
+    .then(res => {
+      if (!res.ok) throw new Error('Arquivo workshops.json não encontrado.');
+      return res.json();
+    })
+    .then(renderWorkshops)
+    .catch(err => {
+      document.getElementById('estado').innerHTML = `
+        <p style="color:#c00;font-size:15px">⚠️ Não foi possível carregar os workshops.</p>
+        <p style="color:#aaa;font-size:13px;margin-top:8px">${err.message}</p>
+      `;
+    });
+</script>
+</body>
+</html>

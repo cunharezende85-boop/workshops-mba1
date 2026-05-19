@@ -1,0 +1,88 @@
+{
+  "curso": "MBA IA Aplicada ao Direito",
+  "atualizadoEm": "2026-05-18",
+  "workshops": [
+    {
+      "id": 1,
+      "data": "24/11/2025",
+      "tema": "Redação de peças jurídicas com IA",
+      "descricao": "Como utilizar inteligência artificial para redigir peças jurídicas com maior precisão, velocidade e qualidade técnica.",
+      "videoUrl": "https://vimeo.com/1145757342/c175ffafe3",
+      "materiais": [
+        {
+          "nome": "Manual Avançado de Engenharia de Prompts para o Direito",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "data": "10/12/2025",
+      "tema": "Como conectar agentes de IA a bancos de dados jurídicos para consultas e redação de peças",
+      "descricao": "Configuração profissional de RAG jurídico com DIFY para consulta inteligente a bases de dados e geração automatizada de peças.",
+      "videoUrl": "https://vimeo.com/1145752550/846cac5986",
+      "materiais": [
+        {
+          "nome": "Aula Avançada – RAG Jurídico e Configuração Profissional do DIFY",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF2"
+        },
+        {
+          "nome": "Manual de RAG Jurídico",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "data": "28/01/2026",
+      "tema": "Como explorar o melhor da IA com um mindset antifrágil",
+      "descricao": "Desenvolvimento de uma mentalidade estratégica para extrair o máximo das ferramentas de IA em contextos jurídicos de alta pressão.",
+      "videoUrl": "https://vimeo.com/1159738636/0d9445ec7d",
+      "materiais": [
+        {
+          "nome": "Material do Workshop – MBA",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_MAT3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "data": "04/03/2026",
+      "tema": "O poder do ecossistema Google para a IA no Direito",
+      "descricao": "Uso estratégico das ferramentas Google (Gemini, NotebookLM, Google Workspace) integradas à prática jurídica.",
+      "videoUrl": "https://vimeo.com/1171031897/fb1bbb369f",
+      "materiais": [
+        {
+          "nome": "Prompts – Réplica e Contestação (RAJ)",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_DOCX4"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "data": "18/03/2026",
+      "tema": "Claude e o Raciocínio Argumentativo Profundo na Geração de Peças Jurídicas",
+      "descricao": "Como o modelo Claude aplica raciocínio jurídico profundo para geração de peças com alta qualidade argumentativa.",
+      "videoUrl": "https://vimeo.com/1175267028/0207ac5a52",
+      "materiais": [
+        {
+          "nome": "Aula Claude – Redação Jurídica",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF5"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "data": "06/05/2026",
+      "tema": "Jurimetria com Excel e Power BI",
+      "descricao": "Análise quantitativa de dados jurídicos com Excel e Power BI: como usar jurimetria para embasar estratégias e teses jurídicas.",
+      "videoUrl": "https://vimeo.com/1190134543/502f0e93e8",
+      "materiais": [
+        {
+          "nome": "Base de Dados – Processos (Excel)",
+          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_XLSX6"
+        }
+      ]
+    }
+  ]
+}
