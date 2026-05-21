@@ -1,6 +1,6 @@
 {
   "curso": "MBA IA Aplicada ao Direito",
-  "atualizadoEm": "2026-05-18",
+  "atualizadoEm": "2026-05-21",
   "workshops": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       "materiais": [
         {
           "nome": "Manual Avançado de Engenharia de Prompts para o Direito",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF1"
+          "url": "https://empregadados-my.sharepoint.com/:b:/g/personal/otacilio_empregadados_com_br/IQBvu_M4lU3cR6ogppZZRNTyAbVO7vEOlFU0G0oBIGkhvNU?e=HZp0DA"
         }
       ]
     },
@@ -24,11 +24,11 @@
       "materiais": [
         {
           "nome": "Aula Avançada – RAG Jurídico e Configuração Profissional do DIFY",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF2"
+          "url": "https://empregadados-my.sharepoint.com/:b:/g/personal/otacilio_empregadados_com_br/IQBlucwa1i-STpH_roxxfNpuAZ-SWlAu3YfNKaOi25ZmctI?e=X016RL"
         },
         {
           "nome": "Manual de RAG Jurídico",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF3"
+          "url": "https://empregadados-my.sharepoint.com/:b:/g/personal/otacilio_empregadados_com_br/IQCgExvyLRZ3RZkMr1js31-DATFx2GkTP58Ro-Mk3foJMP0?e=jdRNvm"
         }
       ]
     },
@@ -41,7 +41,7 @@
       "materiais": [
         {
           "nome": "Material do Workshop – MBA",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_MAT3"
+          "url": "https://empregadados-my.sharepoint.com/:p:/g/personal/otacilio_empregadados_com_br/IQAhHNuWORpvRYTFVJ1QFIqCAeHMyXFYQEe0ZefQ5nj3kYQ?e=y3etBp&nav=eyJzSWQiOjI1NiwiY0lkIjowfQ"
         }
       ]
     },
@@ -54,7 +54,7 @@
       "materiais": [
         {
           "nome": "Prompts – Réplica e Contestação (RAJ)",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_DOCX4"
+          "url": "https://empregadados-my.sharepoint.com/:w:/g/personal/otacilio_empregadados_com_br/IQD9WWClG2KAQqxeyfstoR_XAe5hxhzQozvkebBkqgYpqO0?e=keoovn"
         }
       ]
     },
@@ -67,7 +67,7 @@
       "materiais": [
         {
           "nome": "Aula Claude – Redação Jurídica",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_PDF5"
+          "url": "https://empregadados-my.sharepoint.com/:b:/g/personal/otacilio_empregadados_com_br/IQDFF2N0xBA5QZBtxWxo9pElAUjZ-dan0NkqUoaq7V3912A?e=qSz5Ax"
         }
       ]
     },
@@ -80,7 +80,7 @@
       "materiais": [
         {
           "nome": "Base de Dados – Processos (Excel)",
-          "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_XLSX6"
+          "url": "https://empregadados-my.sharepoint.com/:x:/g/personal/otacilio_empregadados_com_br/IQByr6yJaN9lQJ2Z0B4GMJOsAT8YEnAoiWVwwD7YxNcpJsA?e=DgheyE"
         }
       ]
     },
@@ -92,9 +92,7 @@
       "materiais": [
         {
           "nome": "Agendamento Jurídico IA",
-          "url": "material-agendamento-juridico-ia-final.pdf"
+          "url": "https://empregadados-my.sharepoint.com/:b:/g/personal/otacilio_empregadados_com_br/IQDN8h2D--rzTYzNKrhEOYUlAdnqtg1o2S-SfUDS2g9BPLs?e=2IOPLh"
         }
-      ]
-    }
- ]
+  ]
 }
