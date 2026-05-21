@@ -83,6 +83,18 @@
           "url": "COLE_AQUI_O_LINK_DO_SHAREPOINT_XLSX6"
         }
       ]
+    },
+    { "id": 7,
+      "data": "20/05/2026",
+      "tema": "Agendamento de Tarefas Jurídicas com IA",
+      "descricao": "Aborda como utilizar Inteligência Artificial para automatizar e organizar tarefas jurídicas, prazos e acompanhamentos de forma eficiente.",
+      "videoUrl": "https://vimeo.com/1194459555/e0522c7e49?share=copy&fl=sv&fe=ci",
+      "materiais": [
+        {
+          "nome": "Agendamento Jurídico IA",
+          "url": "material-agendamento-juridico-ia-final.pdf"
+        }
+      ]
     }
-  ]
+ ]
 }
